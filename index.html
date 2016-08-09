@@ -1,2 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="skeleton.css">
+    <link rel="stylesheet" media="(min-width: 750px)" type="text/css" href="style.css">
+    <title> Yoda Speak </title>
+  </head>
+  <body>
+    <img src="yoda.png" alt="yoda">
+    <h2> Yoda Translator </h2>
+    <h5>Construct Sentences that Master Yoda will approve of!</h5>
+    <p id="sampletext"> Example: You must control the Force and not go to the Dark Side. </p>
 
-<h1> test test</h1>
+    <div id="container">
+
+    <form class="input" id="text-form" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+      <textarea class="six columns" id="ytextinput" name="text" rows="8" placeholder="Please type in your text here to convert to Yoda Speak"></textarea>
+      <div class="six columns" id="ytextoutput"></div>
+      <button class="twelve columns button button-primary" id="submitbtn" type="submit" name="submit"> Translate </button>
+    </form>
+
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  </body>
+</html>
