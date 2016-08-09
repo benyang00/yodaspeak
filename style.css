@@ -1,0 +1,68 @@
+html {
+  background-color: #3C3C3B;
+}
+h2, h5, p {
+  font-weight: bold;
+  color: #ACC473;
+  text-align: center;
+}
+p {
+  color: grey;
+}
+textarea {
+  border: 2px solid #4E6E5D;
+  height: 30%;
+  margin-left: 5%;
+  background-color: #3C3C3B;
+  color: #ACC473;
+  font-weight:bold;
+  padding: 2%;
+}
+textarea:focus {
+  border: 2px solid green;
+}
+img {
+  height: 12%;
+  width: 12%;
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-bottom: 2%;
+  display: block;
+}
+#submitbtn {
+  background-color: #ACC473;
+  color: #3C3C3B;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+}
+
+#submitbtn:hover {
+  background-color: green;
+}
+
+#ytextoutput {
+  border-radius: 3px;
+  border: 2px solid #4E6E5D;
+  height: 240px;
+}
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Styling the svg loader
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.loader {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader svg path,
+.loader svg rect {
+  fill: green;
+}
