@@ -1,42 +1,3 @@
-  /*h2{
-    font-size: 6em;
-    margin-bottom: 5%;
-  }
-  h5 {
-    font-size: 3em;
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
-  p {
-    font-size: 2.5em;
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
-  #ytextinput, #ytextoutput {
-    width: 100%;
-    margin: 0 auto;
-  }
-  #ytextoutput {
-    display: none;
-  }
-  img {
-    margin-top: 10%;
-    height: 20%;
-    width: 20%;
-  }
-  textarea {
-    font-size: 2em;
-    height: 300px;
-  }
-  #submit {
-    font-size: 3em;
-    padding: 5%;
-    height: 20%;
-  }
-
-@media screen and (min-width: 750px) {*/
 html {
   background-color: #3C3C3B;
 }
@@ -52,6 +13,10 @@ textarea {
   border: 2px solid #4E6E5D;
   height: 30%;
   margin-left: 5%;
+  background-color: #3C3C3B;
+  color: #ACC473;
+  font-weight:bold;
+  padding: 2%;
 }
 textarea:focus {
   border: 2px solid green;
@@ -79,10 +44,25 @@ img {
 #ytextoutput {
   border-radius: 3px;
   border: 2px solid #4E6E5D;
-  height: 200px;
+  height: 240px;
 }
 #container {
   width: 80%;
   margin: 0 auto;
 }
-/*}*/
+/* Styling the svg loader
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.loader {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.loader svg path,
+.loader svg rect {
+  fill: green;
+}
